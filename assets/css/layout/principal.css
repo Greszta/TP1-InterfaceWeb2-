@@ -1,0 +1,17 @@
+body {
+  margin-left: var(--espace-xxlarge);
+  margin-right: var(--espace-xxlarge);
+}
+
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  margin-top: var(--espace-xxlarge);
+  margin-bottom: var(--espace-xxlarge);
+}
+
+main {
+  display: flex;
+}

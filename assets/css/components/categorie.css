@@ -1,0 +1,13 @@
+.categorie {
+  display: inline-block;
+  min-width: fit-content;
+}
+
+.categorie li {
+  padding-top: var(--espace-moyen);
+  padding-bottom: var(--espace-moyen);
+}
+
+section {
+  width: 2px;
+}

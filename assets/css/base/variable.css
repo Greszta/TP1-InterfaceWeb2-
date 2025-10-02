@@ -1,0 +1,16 @@
+:root {
+  --police-titre: "Funnel Sans", sans-serif;
+  --police-sous-titre: "Quicksand", sans-serif;
+  --police-corps: "Jura", sans-serif;
+
+  --police-taille-petit: 16px;
+  --police-taille-moyen: 20px;
+  --police-taille-large: 24px;
+  --police-taille-xlarge: 32px;
+
+  --espace-petit: 5px;
+  --espace-moyen: 10px;
+  --espace-large: 20px;
+  --espace-xlarge: 30px;
+  --espace-xxlarge: 50px;
+}

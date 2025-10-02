@@ -1,0 +1,22 @@
+body {
+  font-family: var(--police-corps);
+  font-size: var(--police-taille-moyen);
+}
+
+h1 {
+  font-family: var(--police-titre);
+  font-size: var(--police-taille-xlarge);
+  font-weight: bold;
+}
+
+h2 {
+  font-family: var(--police-titre);
+  font-size: var(--police-taille-large);
+  font-weight: bold;
+}
+
+h3 {
+  font-family: var(--police-sous-titre);
+  font-size: var(--police-taille-moyen);
+  font-weight: bold;
+}
