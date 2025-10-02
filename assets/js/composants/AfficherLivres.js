@@ -1,11 +1,7 @@
 class AfficherLivres {
   #titre;
   #prix;
-  #editeur;
-  #pages;
   #image;
-  #nouveaute;
-  #categorie;
   #conteneurHTML;
 
   constructor(conteneurHTML, titre, image, prix) {
@@ -14,14 +10,15 @@ class AfficherLivres {
     this.#image = image;
     this.#prix = prix;
 
-    this._injecterHtml();
+    this._injecterHTML();
   }
 
-  _injecterHtml() {
-    let gabarit = `<div>
+  _injecterHTML() {
+    let gabarit = `<div class="livre">
           <img src="${this.#image}" alt="" />
-          <h2>${this.#titre}</h2>
-          <h3>${this.#prix}$</h3>
+          <span>${this.#titre}</span>
+          </br>
+          <span>${this.#prix}$</span>
           <button>Ajouter</button>
         </div>
     `;

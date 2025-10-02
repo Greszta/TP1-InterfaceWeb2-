@@ -3,36 +3,36 @@ import { livres } from "../data/livres.js";
 
 class Application {
   #contDiv;
-  #listeActivites;
+  #librairie;
   #donneesLivres;
 
   constructor() {
     this.#contDiv = document.querySelector(".librarie");
 
     this.#recupererDonnees();
-    this.#listeActivites = [];
+    this.#librairie = [];
 
     this.#donneesLivres.forEach(
       function (livres) {
-        const nouvelleActivite = new AfficherLivres(
+        const nouvellibrairie = new AfficherLivres(
           this.#contDiv,
           livres.titre,
           livres.image,
           livres.prix
         );
-        this.#listeActivites.push(nouvelleActivite);
+        this.#librairie.push(nouvellibrairie);
       }.bind(this)
     );
   }
 
-  get listeActivites() {
-    return this.#listeActivites;
+  get librairie() {
+    return this.#librairie;
   }
 
-  set listeActivites(nouvelleListeActivites) {
-    this.#listeActivites = nouvelleListeActivites;
+  set librairie(nouvellibrairie) {
+    this.#librairie = nouvellibrairie;
 
-    this.#listeActivites.forEach(
+    this.#librairie.forEach(
       function (livres) {
         livres.injecterHTML();
       }.bind(this)
