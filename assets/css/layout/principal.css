@@ -23,3 +23,7 @@ main {
   padding-left: 30px;
   width: 100%;
 }
+
+.livre {
+  width: fit-content;
+}
