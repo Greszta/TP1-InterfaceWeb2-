@@ -12,17 +12,18 @@ class Application {
   #categories;
   #librairieComplete;
   #conteneurModale;
+  #modale;
 
   constructor() {
     this.#conteneurLivres = document.querySelector(".librairie");
     this.#categorieLivres = document.querySelector(".filtres");
-    this.#conteneurModale = document.querySelector(".boite-modale");
+    this.#conteneurModale = document.querySelector(".conteneur__modale");
 
     this.#recupererDonnees();
     this.#librairie = [];
 
     this.#categories = new Categorie(this.#categorieLivres, this);
-
+    this.#modale = new Modale(this.#conteneurModale);
     this.#donneesLivres.forEach(
       function (livres) {
         const nouveauLivre = new Livre(
@@ -30,7 +31,8 @@ class Application {
           livres.titre,
           livres.image,
           livres.prix,
-          livres.categorie
+          livres.categorie,
+          this.#modale
         );
         this.#librairie.push(nouveauLivre);
       }.bind(this)

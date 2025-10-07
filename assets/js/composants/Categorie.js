@@ -41,10 +41,6 @@ class Categorie {
   }
   filtrerParCategorie(categorie) {
     const clone = [...this.#application.librairieComplete];
-    console.log(categorie);
-    console.log(clone[0]);
-    console.log(clone[0]?.categorie);
-
     const resultat = clone.filter((livre) => {
       if (categorie === "Tous" || categorie === "Nouveautés") {
         return true;
