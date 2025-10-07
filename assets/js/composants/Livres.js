@@ -1,19 +1,21 @@
-class AfficherLivres {
+class Livre {
   #titre;
   #prix;
   #image;
   #conteneurHTML;
+  #categorie;
 
-  constructor(conteneurHTML, titre, image, prix) {
+  constructor(conteneurHTML, titre, image, prix, categorie) {
     this.#conteneurHTML = conteneurHTML;
     this.#titre = titre;
     this.#image = image;
     this.#prix = prix;
+    this.#categorie = categorie;
 
-    this._injecterHTML();
+    this.injecterHTML();
   }
 
-  _injecterHTML() {
+  injecterHTML() {
     let gabarit = `<div class="livre">
           <img src="${this.#image}" alt="" />
           <span>${this.#titre}</span>
@@ -24,6 +26,10 @@ class AfficherLivres {
     `;
     this.#conteneurHTML.insertAdjacentHTML("beforeend", gabarit);
   }
+
+  get categorie() {
+    return this.#categorie;
+  }
 }
 
-export default AfficherLivres;
+export default Livre;

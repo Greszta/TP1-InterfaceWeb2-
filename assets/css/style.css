@@ -4,7 +4,8 @@
 @import url(base/variable.css);
 @import url(base/typographie.css);
 
-@import url(components/categorie.css);
+@import url(components/filtres.css);
 @import url(components/images.css);
+@import url(components/modale.css);
 
 @import url(layout/principal.css);

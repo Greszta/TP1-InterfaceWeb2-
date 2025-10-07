@@ -1,9 +1,9 @@
-.categorie {
+.filtres {
   display: inline-block;
   min-width: fit-content;
 }
 
-.categorie li {
+.filtres li {
   padding-top: var(--espace-moyen);
   padding-bottom: var(--espace-moyen);
 }
